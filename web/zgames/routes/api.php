@@ -20,3 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 //puede ser post o get, post para ingresar datos, el get para extraer
 Route::get("marcas/get", [ConsolaController::class, "getMarcas"]);
+Route::get("consolas/get", [ConsolasController::class, "getConsolas"]);
+
+Route::get("consolas/post", [ConsolasController::class,"crearConsola"]);
